@@ -1,83 +1,84 @@
-# AI Data Suite 📊🤖
+# ai-data-suite
 
-A collection of AI-powered data and analytics tools using the Model Context Protocol (MCP).
+## Detailed Description
 
-## Projects Included
+ai-data-suite is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-### 1. Database Interfaces
-AI-powered database operations that queries data, creates visualizations, and generates reports.
+## Problem Statement
 
-**Tools:**
-- `query_data` - Query database with natural language
-- `create_visualization` - Create data visualizations
-- `generate_report` - Generate database reports
-- `list_tables` - List database tables
-- `describe_table` - Get table schema
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-### 2. Analytics Dashboards
-AI-powered analytics that filters data, creates custom views, and exports insights.
+## Solution Overview
 
-**Tools:**
-- `filter_data` - Filter dashboard data
-- `create_view` - Create custom data views
-- `export_insights` - Export analytics insights
-- `list_dashboards` - List available dashboards
-- `get_metrics` - Get key metrics
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-### 3. CRM Systems
-AI-powered CRM that updates contacts, logs interactions, and creates follow-up tasks.
+## Key Features
 
-**Tools:**
-- `update_contact` - Update contact information
-- `log_interaction` - Log customer interactions
-- `create_followup` - Create follow-up tasks
-- `list_contacts` - List all contacts
-- `search_contacts` - Search contacts
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
 
 ## Getting Started
 
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
+
 ```bash
-# Clone the repository
-git clone https://github.com/yksanjo/ai-data-suite.git
-
-# Install dependencies
-cd ai-data-suite
-npm install
-
-# Run the MCP server
-npm start
+npm ci
+npm run lint
+npm test
+npm run build
 ```
 
-## MCP Server Configuration
+## Usage
 
-Add to your MCP settings:
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-```json
-{
-  "mcpServers": {
-    "ai-data-suite": {
-      "command": "node",
-      "args": ["/path/to/ai-data-suite/dist/server.js"]
-    }
-  }
-}
-```
+## Quality Standards
 
-## Architecture
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-- **Read-Only Tools**: Use `readOnlyHint: true` for query/analysis operations
-- **State-Modifying Tools**: Require user confirmation before execution
-- **Multi-Step Workflows**: Chain tools for complex data tasks
+## Security
 
-## Badge
-
-[![MCP Server](https://img.shields.io/badge/MCP%20Server-Ready-blue)](https://modelcontextprotocol.io)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.3+-blue)](https://www.typescriptlang.org)
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT
+This project is released under the MIT License.
