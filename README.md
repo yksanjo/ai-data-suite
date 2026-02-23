@@ -1,5 +1,12 @@
 # ai-data-suite
 
+Production-grade project scaffold focused on reliability, maintainability, and fast onboarding.
+
+[![CI](https://img.shields.io/github/actions/workflow/status/yksanjo/ai-data-suite/ci.yml?branch=main&label=ci)](https://github.com/yksanjo/ai-data-suite/actions)
+![License](https://img.shields.io/github/license/yksanjo/ai-data-suite)
+![Last Commit](https://img.shields.io/github/last-commit/yksanjo/ai-data-suite)
+![Repo Size](https://img.shields.io/github/repo-size/yksanjo/ai-data-suite)
+
 ## Detailed Description
 
 ai-data-suite is maintained as an industry-grade software project with production-ready engineering practices.  
